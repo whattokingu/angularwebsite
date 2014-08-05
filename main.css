@@ -1,0 +1,94 @@
+
+h1{
+
+	text-align: center;
+	font-family: "lucida Grande";
+	font-size: 60px;
+
+}
+
+img.title{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+
+}
+.navbar{
+	font-family: "helvetica";
+	position:relative;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.navbar li{
+	display: inline;
+
+
+}
+
+.profile img{
+	border: 1px solid #021a40;
+	max-height: 200px;
+
+}
+
+
+.profile p{
+	text-align: justify;
+	position: relative;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+width: 350px;
+
+}
+
+.whatnow p{
+	text-align: justify;
+	position: relative;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+width: 350px;
+}
+
+
+.gallery img{
+	padding: 2px;
+	border: 1px solid #021a40;
+	background-color: #ffffff;
+	max-width: 1000px;
+	max-height: 700px;
+	height: auto;
+	width: auto;
+
+}
+.blog p{
+	text-align: justify;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	width: 350px;
+}
+.blog small{
+	font-style: italic;
+} 
+
+
+}
+
+.links{
+	font-family: helvetica;
+
+}
+
+a:link {color:#666666;}      /* unvisited link */
+a:visited {color:#9999CC;}  /* visited link */
+a:hover {color:#CCCCCC;}  /* mouse over link */
+a:active {color:#0000FF;}

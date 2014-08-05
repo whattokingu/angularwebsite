@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html ng-app="website">
+	<head>
+		<title>WeihanZheng</title>
+		<link rel="stylesheet"  href="main.css">
+		<script type ="text/javascript" src="angular.min.js"></script>
+		<script type = "text/javascript" src ="app.js"></script>
+	</head>
+	<body>
+
+
+	<h1>Weihan</h1>
+	<img class="title" src="./images/titlephoto.jpg" alt="my childhood photo...look how strong I am!">
+	<div class="navbar">
+	<section ng-controller="PanelController as panel">
+		<ul class="nav">
+			<li ng-class="{active: panel.isSet(1) }">
+				<a href ng-click="panel.selectTab(1)">Profile</a>
+			</li>
+			<li ng-class="{active: panel.isSet(2) }">
+				<a href ng-click="panel.selectTab(2)">Writings</a>
+			</li>
+			<li ng-class="{active: panel.isSet(3) }">
+				<a href ng-click="panel.selectTab(3)">Photos</a>
+			</li>
+			</li>
+			<li ng-class="{active: panel.isSet(4) }">
+				<a href ng-click="panel.selectTab(4)">Links</a>
+			</li>
+		</ul>
+
+		<div class="displayarea">
+		<div ng-show="panel.isSet(1)">
+			<div class="profile">	
+	
+	<img class="writeup" src="images/profilepic.jpg" alt="sigh...it's not working!" align="top"
+	height=210px; width=160px>
+	<p> 
+		Hi, My name is Weihan Zheng. I am a Computing and Business major currently studying in National University of Singapore. My interests are varied.
+	</p>
+	<br>
+</div>
+<div class="whatnow">
+	<h3>What am I up to these days?</h3>
+	<p>
+		I am currently in Seoul for summer school and will be heading to Hungary soon for a short travel before starting my exchange programme in Lund, Sweden. I am open to traveling to anywhere in Europe. Hit me up if you are short of a travel buddy!
+	</p>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+		</div>
+		
+		<div ng-show="panel.isSet(2)">
+			<div class="blog" ng-repeat = "entry in panel.entries">
+				<h4>{{entry.title}}</h4> 
+
+				<p>{{entry.page}}</p><br>
+				<small>{{entry.date}}</small>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		</div>
+		
+		<div ng-show="panel.isSet(3)">
+			I am occasionally a professional photographer (kidding!)<br><br>
+				<div class="gallery" ng-repeat = "image in panel.images">
+					<img ng-src="{{image.image}}"><br>
+					{{image.description}}
+					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				</div>
+		
+
+		</div>
+		
+
+
+		<div ng-show="panel.isSet(4)">
+			<div class="links">
+				<br><br>
+	<p>I am active on the following websites/social media</p>
+	<ul>
+		<li><a href="http://www.facebook.com/zweihan">Facebook</a></li>
+		<li><a href="http://github.com/whattokingu">Github</a></li>
+		<li><a href="http://www.quora.com/Zheng-Weihan">Quora</a></li>
+	</ul>
+		Or you can email <a href="mailto:zhengweihan.91@gmail.com">me</a>.<br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+		</div>
+</div>
+	</section>
+	</div>
+
+
+	</body>
+</html>
