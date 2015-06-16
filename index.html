@@ -3,6 +3,7 @@
 	<head>
 		<title>WeihanZheng</title>
 		<link rel="stylesheet"  href="main.css">
+                <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 		<script type ="text/javascript" src="angular.min.js"></script>
 		<script type = "text/javascript" src ="app.js"></script>
 	</head>
@@ -18,7 +19,7 @@
 				<a href ng-click="panel.selectTab(1)">Profile</a>
 			</li>
 			<li ng-class="{active: panel.isSet(2) }">
-				<a href ng-click="panel.selectTab(2)">Writings</a>
+				<a href ng-click="panel.selectTab(2)">Works</a>
 			</li>
 			<li ng-class="{active: panel.isSet(3) }">
 				<a href ng-click="panel.selectTab(3)">Photos</a>
@@ -43,7 +44,7 @@
 <div class="whatnow">
 	<h3>What am I up to these days?</h3>
 	<p>
-		I am currently in Seoul for summer school and will be heading to Hungary soon for a short travel before starting my exchange programme in Lund, Sweden. I am open to traveling to anywhere in Europe. Hit me up if you are short of a travel buddy!
+		Fresh from exchange, I am currently taking reduced load at school and doing a part-time internship at a startup. 
 	</p>
 <br><br><br><br><br><br><br><br><br><br><br><br>
 </div>
@@ -51,11 +52,12 @@
 		
 		<div ng-show="panel.isSet(2)">
 			<div class="blog" ng-repeat = "entry in panel.entries">
-				<h4>{{entry.title}}</h4> 
+                <h4>{{entry.title}}</h4> 
 
 				<p>{{entry.page}}</p><br>
 				<small>{{entry.date}}</small>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+			<br><br><br><br><br><br><br><br><br><br><br><br>
 		</div>
 		
 		<div ng-show="panel.isSet(3)">
@@ -80,7 +82,14 @@
 		<li><a href="http://github.com/whattokingu">Github</a></li>
 		<li><a href="http://www.quora.com/Zheng-Weihan">Quora</a></li>
 	</ul>
-		Or you can email <a href="mailto:zhengweihan.91@gmail.com">me</a>.<br><br><br><br><br><br><br><br><br><br><br><br>
+		Or you can email <a href="mailto:zhengweihan.91@gmail.com">me</a>.
+
+		<br><br>
+		My resume can be found <a href="resume.pdf">here</a>.
+		<br><br><br><br><br><br><br><br><br><br><br>
+
+		<small>Website tested on Chrome and Firefox.</small>
+		<br><br>
 </div>
 		</div>
 </div>
